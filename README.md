@@ -1,18 +1,19 @@
 <a name="top"></a>
 
-# MongoDB Operations
+# MongoDB + Doker Operations
 
 ## Table of Contents
 
-1. [Insert Data](#insert-data)
-   - [Insert a Single Document](#insert-a-single-document)
-   - [Insert Multiple Documents](#insert-multiple-documents)
-2. [Fetch and Display All Documents](#fetch-and-display-all-documents)
-3. [Update Data](#update-data)
-   - [Update the First Matching Document](#update-the-first-matching-document)
-   - [Update All Matching Documents](#update-all-matching-documents)
-4. [Replace Documents](#replace-documents)
-5. [Delete Data](#delete-data)
+1. [MongoDB Operations](#mongodb-operations)
+   - [Insert Data](#insert-data)
+     - [Insert a Single Document](#insert-a-single-document)
+     - [Insert Multiple Documents](#insert-multiple-documents)
+   - [Fetch and Display All Documents](#fetch-and-display-all-documents)
+   - [Update Data](#update-data)
+     - [Update the First Matching Document](#update-the-first-matching-document)
+     - [Update All Matching Documents](#update-all-matching-documents)
+   - [Replace Documents](#replace-documents)
+   - [Delete Data](#delete-data)
 6. [Setting Up a MongoDB Container with Docker](#setting-up-a-mongodb-container-with-docker)
    - [Check If Computer Port Is Busy](#check-if-computer-port-is-busy)
    - [List Available Images](#list-available-images)
@@ -28,6 +29,8 @@
    - [Show Available Collections](#show-available-collections)
 
 ---
+
+# MongoDB Operations
 
 ## Insert Data
 
