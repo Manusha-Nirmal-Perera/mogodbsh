@@ -1,3 +1,5 @@
+<a name="top"></a>
+
 # MongoDB Operations
 
 ## Table of Contents
@@ -13,8 +15,11 @@
 5. [Delete Data](#delete-data)
 6. [Setting Up a MongoDB Container with Docker](#setting-up-a-mongodb-container-with-docker)
    - [Check If Computer Port Is Busy](#check-if-computer-port-is-busy)
+   - [List Available Images](#list-available-images)
    - [Pull MongoDB Image](#pull-mongodb-image)
+   - [Remove an Unwanted Image](#remove-an-unwanted-image)
    - [Run MongoDB Container](#run-mongodb-container)
+   - [Delete a Container](#delete-a-container)
    - [Access MongoDB Shell](#access-mongodb-shell)
    - [Login to MongoDB](#login-to-mongodb)
    - [Show All Databases](#show-all-databases)
@@ -75,11 +80,18 @@ db.tableName.replaceOne(
 db.users.deleteOne({ targetField: "value" })
 ```
 
+[⬆ Back to Top](#top)
+
 # Setting Up a MongoDB Container with Docker
 
 ## Check If Computer Port Is Busy
 ```sh
 netstat -ano | findstr :<host_port>
+```
+
+## List Available Images
+```sh
+docker images
 ```
 
 ## Pull MongoDB Image
@@ -88,9 +100,20 @@ Replace with required version:
 docker pull mongo:<version>
 ```
 
+## Remove an Unwanted Image
+Replace `<image_id>` with the image ID of the required image:
+```sh
+docker rmi <image_id>
+```
+
 ## Run MongoDB Container
 ```sh
 docker run -d -p <host_port>:<container_port> --name <container_name> mongo:<version>
+```
+
+## Delete a Container
+```sh
+docker rm <container_id>
 ```
 
 ## Access MongoDB Shell
@@ -141,3 +164,4 @@ db
 show collections
 ```
 
+[⬆ Back to Top](#top)
