@@ -88,6 +88,8 @@ db.users.deleteOne({ targetField: "value" })
 # Setting Up a MongoDB Container with Docker
 
 ## Check If Computer Port Is Busy
+
+- normaly we use port number 27017
 ```sh
 netstat -ano | findstr :<host_port>
 ```
@@ -110,6 +112,8 @@ docker rmi <image_id>
 ```
 
 ## Run MongoDB Container
+- normally we map the 27017 container port to 27017 host port
+- replace  <host_port> and <container_port> with 27017
 ```sh
 docker run -d -p <host_port>:<container_port> --name <container_name> mongo:<version>
 ```
